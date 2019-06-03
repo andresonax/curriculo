@@ -18,8 +18,8 @@ HomeStack.navigationOptions = {
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
+          ? `ios-bowtie${focused ? '' : '-outline'}`
+          : 'md-bowtie'
       }
     />
   ),
@@ -30,7 +30,7 @@ const LinksStack = createStackNavigator({
 });
 
 LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+  tabBarLabel: 'Formação',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
